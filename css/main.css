@@ -841,4 +841,7 @@ section .section-title {
     padding-bottom: 0px;
     margin-bottom: 10px;
   }
+  #footer ul.quick-links li {
+    text-align: center;
+  }
 }
