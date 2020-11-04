@@ -1,6 +1,14 @@
 $(document).ready(function () {
-	$('#dtBasicExample').DataTable();
-	$('.dataTables_length').addClass('bs-select');
+	$('#example').DataTable({
+		"dom": '<"top"Bf>rt<"bottom"lip><"clear">',
+		// dom: 'Bfrtip',
+		buttons: [
+			'copyHtml5',
+			'excelHtml5',
+			'csvHtml5',
+			'pdfHtml5'
+		]
+	});
 });
 const selectState = document.querySelector("#state");
 const selectLga = document.querySelector("#lga");

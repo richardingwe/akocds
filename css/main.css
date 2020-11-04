@@ -38,8 +38,8 @@ nav {
   background-color: #012501 !important;
   top: 0;
   z-index: 9999;
-  -webkit-filter: drop-shadow(0px 0px 2px black);
-          filter: drop-shadow(0px 0px 2px black);
+  -webkit-filter: drop-shadow(0px 2.5px 2.5px black);
+          filter: drop-shadow(0px 2.5px 2.5px black);
 }
 
 .nav-link,
@@ -640,6 +640,16 @@ nav {
   #login .login100-more {
     width: 50%;
   }
+  #project .top,
+  #project .bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   html body #registration .intl-tel-input {
     display: table-cell;
     width: 80%;
@@ -689,6 +699,16 @@ nav {
   }
   .quick {
     margin: .5rem 0;
+  }
+  #project .top,
+  #project .bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   body #projectDetails .label {
     -webkit-box-orient: vertical;
@@ -848,6 +868,22 @@ nav {
   color: #373a3c;
   border-radius: 5px;
   border: 1px solid #dddddd;
+}
+
+#project .projectContainer .top,
+#project .projectContainer .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: .4rem;
 }
 
 #project .projectContainer .table-main {

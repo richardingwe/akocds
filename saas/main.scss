@@ -38,7 +38,7 @@ nav {
 	background-color: rgb(1, 37, 1) !important;
 	top: 0;
 	z-index: 9999;
-	filter: drop-shadow(0px 0px 2px black);
+	filter: drop-shadow(0px 2.5px 2.5px black);
 }
 
 .nav-link,
@@ -625,6 +625,13 @@ nav {
 			width: 50%;
 		}
 	}
+
+	#project .top,
+	#project .bottom {
+		flex-direction: column;
+		justify-content: center;
+	}
+
 	html body #registration {
 		.intl-tel-input {
 			display: table-cell;
@@ -677,6 +684,12 @@ nav {
 
 	.quick {
 		margin: .5rem 0;
+	}
+
+	#project .top,
+	#project .bottom {
+		flex-direction: column;
+		justify-content: center;
 	}
 
 	// media queries for projectDetails
@@ -864,6 +877,15 @@ nav {
 			border-radius: 5px;
 			border: 1px solid #dddddd;
 		}
+	}
+
+	.top,
+	.bottom {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		margin-bottom: .4rem;
 	}
 
 	.table-main {
