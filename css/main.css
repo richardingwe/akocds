@@ -879,7 +879,7 @@ nav {
     padding: none !important;
   }
   header .head h6 {
-    font-size: .7rem;
+    display: none;
   }
   html body #registration .inputs {
     width: 100%;
