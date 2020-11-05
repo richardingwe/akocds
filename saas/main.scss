@@ -643,7 +643,7 @@ nav {
 @media (max-width: 768px) {
 	header {
 		margin-left: 0 !important;
-		padding: .2rem;
+		padding: .3srem;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -661,8 +661,9 @@ nav {
 			align-items: center;
 			border: none;
 			text-align: center;
-			margin-left: none;
-			padding: 0.6rem;
+			margin-left: 0;
+			margin-bottom: 0;
+			padding: 0.2rem;
 
 			h6 {
 				font-size: .8rem;
