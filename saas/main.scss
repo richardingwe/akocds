@@ -642,7 +642,32 @@ nav {
 
 @media (max-width: 768px) {
 	header {
-		display: none;
+		margin-left: 0 !important;
+		padding: .2rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: $orang-color;
+
+		.logoHead img {
+			width: 70px;
+		}
+
+		.head {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			border: none;
+			text-align: center;
+			margin-left: none;
+			padding: 0.6rem;
+
+			h6 {
+				font-size: .8rem;
+			}
+		}
 	}
 
 	#login {
@@ -815,6 +840,31 @@ nav {
 }
 
 @media (max-width: 400px) {
+	header {
+		padding: .2rem;
+		display: flex;
+		flex-direction: column;
+		// flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
+		background-color: $orang-color;
+
+		.logoHead img {
+			width: 50px;
+		}
+
+		.head {
+			border: none;
+			text-align: center;
+			margin: none !important;
+			padding: none !important;
+
+			h6 {
+				font-size: .7rem;
+			}
+		}
+	}
+
 	html body #registration {
 		.inputs {
 			width: 100%;
