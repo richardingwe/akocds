@@ -140,13 +140,13 @@
                         <div class="col-sm-6 rightItem">
                             <div class="form-group inputs">
                                 <label for="contractStartDate">Start Date:</label>
-                                <input type="text" class="form-control" id="contractStartDate">
+                                <input type="date" class="form-control" id="contractStartDate">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group inputs float-right">
                                 <label for="contractEndDate">End Date:</label>
-                                <input type="text" class="form-control" id="contractEndDate">
+                                <input type="date" class="form-control" id="contractEndDate">
                             </div>
                         </div>
                     </div>
@@ -158,7 +158,7 @@
                     <hr>
                     <div class="form-group inputs">
                         <label for="contractItemsTotal">Total number of items (to be procured)</label>
-                        <input type="text" class="form-control" id="contractItemsTotal">
+                        <input type="number" class="form-control" id="contractItemsTotal">
                     </div>
                     <div class="row">
                         <div class="col-sm-6 rightItem">
@@ -194,7 +194,7 @@
 
                     <div class="form-group inputs">
                         <label for="dateSigned">Date contract was signed</label>
-                        <input type="text" class="form-control" id="dateSigned">
+                        <input type="date" class="form-control" id="dateSigned">
                     </div>
                 </div>
 
@@ -220,6 +220,57 @@
                         </div>
                     </div>
                 </div>
+                <div class="form-group inputs">
+                    <input type="file" class="form-control-file border">
+                </div>
+                <div class="form-group inputs">
+                    <label for="documentType">Document type</label>
+                    <select class="form-control" id="documentType">
+                        <option value="contractNotice">contractNotice</option>
+                        <option value="contractSigned">contractSigned</option>
+                        <option value="contractArrangements">contractArrangements</option>
+                        <option value="contractSchedule">contractSchedule</option>
+                        <option value="contractAnnexe">contractAnnexe</option>
+                        <option value="contractGuarantees">contractGuarantees</option>
+                        <option value="subContract">subContract</option>
+                        <option value="illustration">illustration</option>
+                        <option value="submissionDocuments">submissionDocuments</option>
+                        <option value="contractSummary">contractSummary</option>
+                        <option value="cancellationDetails">cancellationDetails</option>
+                    </select>
+                </div>
+                <div class="form-group inputs">
+                    <label for="documentTitle">Document title</label>
+                    <select class="form-control" id="documentTitle">
+                        <option value="Contract notice">Contract notice</option>
+                        <option value="Signed contract">Signed contract</option>
+                        <option value="Arrangements for ending contract">Arrangements for ending contract</option>
+                        <option value="Contract schedules">Contract schedules</option>
+                        <option value="Annexes to the contract">Annexes to the contract</option>
+                        <option value="Guarantees">Guarantees</option>
+                        <option value="Subcontracts">Subcontracts</option>
+                        <option value="Illustrations">Illustrations</option>
+                        <option value="Bid submission documents">Bid submission documents</option>
+                        <option value="Contract summary">Contract summary</option>
+                        <option value="Cancellation details">Cancellation details</option>
+                    </select>
+                </div>
+                
+                <div class="form-group inputs">
+                    <label for="datePublished">Date published</label>
+                    <input type="date" class="form-control" id="datePublished">
+                </div>
+                <div class="form-group inputs">
+                    <label for="documentFormat">Document format</label>
+                    <select class="form-control" id="documentFormat">
+                        <option value="text/html">text/html</option>
+                        <option value="application/doc/docx">application/doc/docx</option>
+                        <option value="application/pdf">application/pdf</option>
+                        <option value="application/xls/xlsx/xlsm">application/xls/xlsx/xlsm</option>
+                        <option value="application/ppt/pptx">application/ppt/pptx</option>
+                    </select>
+                </div>
+
 
 
                     <!-- button section -->

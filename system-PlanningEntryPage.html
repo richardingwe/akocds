@@ -74,19 +74,19 @@
                     <h3>General Information (Buyer Data)</h3>
                     <hr>
                     <div class="form-group inputs">
-                        <label for="companyName">Buyer Name (Purchasing Entity Name-MDA)</label>
+                        <label for="buyerName">Buyer Name (Purchasing Entity Name-MDA)</label>
                         <input type="text" class="form-control" id="buyerName">
                     </div>
                     <div class="form-group inputs">
-                        <label for="companyName">Buyer organization identifier</label>
+                        <label for="buyerOrganizationIdentifier">Buyer organization identifier</label>
                         <input type="text" class="form-control" id="buyerOrganizationIdentifier">
                     </div>
                     <div class="form-group inputs">
-                        <label for="companyName">Buyer address</label>
+                        <label for="buyerAddress">Buyer address</label>
                         <input type="text" class="form-control" id="buyerAddress">
                     </div>
                     <div class="form-group inputs">
-                        <label for="companyName">Buyer contact Point</label>
+                        <label for="BuyerContactPoint">Buyer contact Point</label>
                         <input type="text" class="form-control" id="BuyerContactPoint">
                     </div>
 
@@ -95,15 +95,15 @@
                     <h3 class="mt-5">Procurement Planning Information</h3>
                     <hr>
                     <div class="form-group inputs">
-                        <label for="companyName">OCID</label>
+                        <label for="ocid">OCID</label>
                         <input type="text" class="form-control" id="ocid">
                     </div>
                     <div class="form-group inputs">
-                        <label for="companyName">Procurement Rationale</label>
+                        <label for="procurementRationale">Procurement Rationale</label>
                         <input type="text" class="form-control" id="procurementRationale">
                     </div>
                     <div class="form-group inputs">
-                        <label for="companyName">Milestones in the Planning stage</label>
+                        <label for="milestoneplanning">Milestones in the Planning stage</label>
                         <div class="form-check">
                             <label class="form-check-label">
                                 <input type="checkbox" class="form-check-input" value="">Option 1
@@ -126,30 +126,79 @@
                     <h3 class="mt-5">Budget Reserved for the contracting Process</h3>
                     <hr>
                     <div class="form-group inputs">
-                        <label for="companyName">Budget ID</label>
+                        <label for="budgetId">Budget ID</label>
                         <input type="text" class="form-control" id="budgetId">
                     </div>
                     <div class="form-group inputs">
-                        <label for="companyName">Budget Description</label>
+                        <label for="budgetDescription">Budget Description</label>
                         <textarea class="form-control" rows="5" id="budgetDescription"></textarea>
                     </div>
                     <div class="form-group inputs">
-                        <label for="companyName">Budget Amount</label>
+                        <label for="budgetAmount">Budget Amount</label>
                         <input type="text" class="form-control" id="budgetAmount">
                     </div>
                     <div class="form-group inputs">
-                        <label for="companyName">Project Name</label>
+                        <label for="projectName">Project Name</label>
                         <input type="text" class="form-control" id="projectName">
                     </div>
                     <div class="form-group inputs">
-                        <label for="companyName">Project ID</label>
+                        <label for="projectId">Project ID</label>
                         <input type="text" class="form-control" id="projectId">
                     </div>
                     <div class="form-group inputs">
-                        <label for="companyName">Budget URI</label>
+                        <label for="budgetURI">Budget URI</label>
                         <input type="text" class="form-control" id="budgetURI">
                     </div>
+                    <div class="form-group inputs">
+                        <input type="file" class="form-control-file border">
+                    </div>
+                    <div class="form-group inputs">
+                        <label for="documentType">Document type</label>
+                        <select class="form-control" id="documentType">
+                            <option value="plannedProcurementNotice">plannedProcurementNotice</option>
+                            <option value="procurementPlan">procurementPlan</option>
+                            <option value="marketStudies">marketStudies</option>
+                            <option value="environmentalImpact">environmentalImpact</option>
+                            <option value="assetAndLiabilityAssessment">assetAndLiabilityAssessment</option>
+                            <option value="riskProvisions">riskProvisions</option>
+                            <option value="needsAssessment">needsAssessment</option>
+                            <option value="feasibilityStudy">feasibilityStudy</option>
+                            <option value="projectPlan">projectPlan</option>
+                            
+                        </select>
+                    </div>
+                    <div class="form-group inputs">
+                        <label for="documentTitle">Document title</label>
+                        <select class="form-control" id="documentTitle">
+                            <option value="Notice of planned procurement">Notice of planned procurement</option>
+                            <option value="Procurement plan">Procurement plan</option>
+                            <option value="Market studies">Market studies</option>
+                            <option value="Environmental impact">Environmental impact</option>
+                            <option value="Assessment of government’s assets and liabilities">Assessment of government’s assets and liabilities</option>
+                            <option value="Provisions for management of risks and liabilities">Provisions for management of risks and liabilities</option>
+                            <option value="Needs assessment">Needs assessment</option>
+                            <option value="Feasibility study">Feasibility study</option>
+                            <option value="Project plan">Project plan</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group inputs">
+                        <label for="datePublished">Date published</label>
+                        <input type="date" class="form-control" id="datePublished">
+                    </div>
+                    <div class="form-group inputs">
+                        <label for="documentFormat">Document format</label>
+                        <select class="form-control" id="documentFormat">
+                            <option value="text/html">text/html</option>
+                            <option value="application/doc/docx">application/doc/docx</option>
+                            <option value="application/pdf">application/pdf</option>
+                            <option value="application/xls/xlsx/xlsm">application/xls/xlsx/xlsm</option>
+                            <option value="application/ppt/pptx">application/ppt/pptx</option>
+                        </select>
+                    </div>
                 </div>
+
+
 
                 <!-- button section -->
                 <div class="mt-4">

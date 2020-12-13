@@ -164,7 +164,7 @@
                     <hr>
                     <div class="form-group inputs">
                         <label for="totalNoOfItems">Total number of items (to be procured)</label>
-                        <input type="text" class="form-control" id="">
+                        <input type="number" class="form-control" id="">
                     </div>
                     <div class="row">
                         <div class="col-sm-6 rightItem">
@@ -240,13 +240,13 @@
                         <div class="col-sm-6 rightItem">
                             <div class="form-group inputs">
                                 <label for="tenderStartDate">Start Date:</label>
-                                <input type="text" class="form-control" id="tenderStartDate" >
+                                <input type="date" class="form-control" id="tenderStartDate" >
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group inputs float-right">
                                 <label for="tenderEndDate">End Date:</label>
-                                <input type="text" class="form-control" id="tenderEndDate">
+                                <input type="date" class="form-control" id="tenderEndDate">
                             </div>
                         </div>
                     </div>
@@ -257,13 +257,13 @@
                         <div class="col-sm-6 rightItem">
                             <div class="form-group inputs">
                                 <label for="enquiryStartDate">Start Date:</label>
-                                <input type="text" class="form-control" id="enquiryStartDate" >
+                                <input type="date" class="form-control" id="enquiryStartDate" >
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group inputs float-right">
                                 <label for="enquiryEndDate">End Date:</label>
-                                <input type="text" class="form-control" id="enquiryEndDate">
+                                <input type="date" class="form-control" id="enquiryEndDate">
                             </div>
                         </div>
                     </div>
@@ -272,6 +272,75 @@
                         <label for="eligibilityCriteria">Eligibility criteria</label>
                         <textarea class="form-control" rows="5" id="eligibilityCriteria"></textarea>
                     </div>
+
+                    <div class="form-group inputs">
+                        <input type="file" class="form-control-file border">
+                    </div>
+                    <div class="form-group inputs">
+                        <label for="documentType">Document type</label>
+                        <select class="form-control" id="documentType">
+                            <option value="tenderNotice">tenderNotice</option>
+                            <option value="biddingDocuments">biddingDocuments</option>
+                            <option value="technicalSpecifications">technicalSpecifications</option>
+                            <option value="evaluationCriteria">evaluationCriteria</option>
+                            <option value="evaluationReports">evaluationReports</option>
+                            <option value="contractDraft">contractDraft</option>
+                            <option value="contractArrangements">contractArrangements</option>
+                            <option value="contractSchedule">contractSchedule</option>
+                            <option value="hearingNotice">hearingNotice</option>
+                            <option value="eligibilityCriteria">eligibilityCriteria</option>
+                            <option value="clarifications">clarifications</option>
+                            <option value="shortlistedFirms">shortlistedFirms</option>
+                            <option value="complaints">complaints</option>
+                            <option value="contractGuarantees">contractGuarantees</option>
+                            <option value="billOfQuantity">billOfQuantity</option>
+                            <option value="bidders">bidders</option>
+                            <option value="conflictOfInterest">conflictOfInterest</option>
+                            <option value="illustration">illustration</option>
+                            <option value="cancellationDetails">cancellationDetails</option>
+                    
+                        </select>
+                    </div>
+                    <div class="form-group inputs">
+                        <label for="documentTitle">Document title</label>
+                        <select class="form-control" id="documentTitle">
+                            <option value="Tender notice">Tender notice</option>
+                            <option value="Bidding documents">Bidding documents</option>
+                            <option value="Technical specifications">Technical specifications</option>
+                            <option value="Evaluation criteria">Evaluation criteria</option>
+                            <option value="Evaluation report">Evaluation report</option>
+                            <option value="Contract draft">Contract draft</option>
+                            <option value="Arrangements for ending contract">Arrangements for ending contract</option>
+                            <option value="Contract schedules">Contract schedules</option>
+                            <option value="Public hearing notice">Public hearing notice</option>
+                            <option value="Eligibility criteria">Eligibility criteria</option>
+                            <option value="Clarifications to bidders questions">Clarifications to bidders questions</option>
+                            <option value="Shortlisted firms">Shortlisted firms</option>
+                            <option value="Complaints and decisions">Complaints and decisions</option>
+                            <option value="Guarantees">Guarantees</option>
+                            <option value="Bill of quantity">Bill of quantity</option>
+                            <option value="Information on bidders">Information on bidders</option>
+                            <option value="Conflict of interest">Conflict of interest</option>
+                            <option value="Illustrations">Illustrations</option>
+                            <option value="Cancellation details">Cancellation details</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group inputs">
+                        <label for="datePublished">Date published</label>
+                        <input type="date" class="form-control" id="datePublished">
+                    </div>
+                    <div class="form-group inputs">
+                        <label for="documentFormat">Document format</label>
+                        <select class="form-control" id="documentFormat">
+                            <option value="text/html">text/html</option>
+                            <option value="application/doc/docx">application/doc/docx</option>
+                            <option value="application/pdf">application/pdf</option>
+                            <option value="application/xls/xlsx/xlsm">application/xls/xlsx/xlsm</option>
+                            <option value="application/ppt/pptx">application/ppt/pptx</option>
+                        </select>
+                    </div>
+
 
                     <!-- button section -->
                     <div class="mt-4">
@@ -308,13 +377,13 @@
                         <div class="col-sm-6 rightItem">
                             <div class="form-group inputs">
                                 <label for="evaluationStartDate">Start Date:</label>
-                                <input type="text" class="form-control" id="evaluationStartDate">
+                                <input type="date" class="form-control" id="evaluationStartDate">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group inputs float-right">
                                 <label for="evaluationEndDate">End Date:</label>
-                                <input type="text" class="form-control" id="evaluationEndDate">
+                                <input type="date" class="form-control" id="evaluationEndDate">
                             </div>
                         </div>
                     </div>
@@ -325,13 +394,13 @@
                         <div class="col-sm-6 rightItem">
                             <div class="form-group inputs">
                                 <label for="awardStartDate">Start Date:</label>
-                                <input type="text" class="form-control" id="awardStartDate">
+                                <input type="date" class="form-control" id="awardStartDate">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group inputs float-right">
                                 <label for="awardEndDate">End Date:</label>
-                                <input type="text" class="form-control" id="awardEndDate">
+                                <input type="date" class="form-control" id="awardEndDate">
                             </div>
                         </div>
                     </div>
@@ -342,20 +411,20 @@
                         <div class="col-sm-6 rightItem">
                             <div class="form-group inputs">
                                 <label for="estimatedContractSD">Start Date:</label>
-                                <input type="text" class="form-control" id="estimatedContractSD">
+                                <input type="date" class="form-control" id="estimatedContractSD">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group inputs float-right">
                                 <label for="estimatedContractED">End Date:</label>
-                                <input type="text" class="form-control" id="estimatedContractED">
+                                <input type="date" class="form-control" id="estimatedContractED">
                             </div>
                         </div>
                     </div>
                     
                     <div class="form-group inputs">
                         <label for="numberOfTenderers">Number of tenderers</label>
-                        <input type="text" class="form-control" id="numberOfTenderers">
+                        <input type="number" class="form-control" id="numberOfTenderers">
                     </div>
 
                     <div class="form-group inputs">
