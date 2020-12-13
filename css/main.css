@@ -1087,6 +1087,17 @@ body #registration .input-group .intl-tel-input .form-control {
   border-bottom-right-radius: 0;
 }
 
+body #system-planning {
+  background-color: #ccffcc;
+}
+
+body #system-planning .container {
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-size: 800px;
+  background-position: center;
+}
+
 section {
   padding: 40px 0 10px 0;
 }
