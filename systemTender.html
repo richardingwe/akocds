@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Tender</title>
+    <link rel="icon" href="./img/icon.png">
+    <meta name="theme-color" content="#f59643">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#f59643">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="logoHead">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <div class="head">
+            <h3>Akwa Ibom State Open Contracting System</h3>
+            <h6>Global.Openness.Transparency.Standard.Accountability</h6>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navb">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link hover" href="javascript:void(0)">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hover" href="javascript:void(0)">projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hover" href="javascript:void(0)">Releases</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hover" href="javascript:void(0)">Records</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hover" href="javascript:void(0)">packages</a>
+                </li>
+            </ul>
+            <button class="btn mr-2 my-2 my-sm-0 login-button" type="button">Login/Register</button>
+            <form class="form-inline my-2 my-lg-0">
+                <div class="input-group">
+                    <input type="text" class="form-control border border-right-0" placeholder="Search...">
+                    <span class="input-group-append">
+                        <button class="btn btn-outline-secondary border border-left-0" type="button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </nav>
+
+    <div id="systemTender">
+        <div class="container py-5">
+            <form action="/" method="">
+                <!-- General Information (Buyer Data) section -->
+                <div class="generalInfo">
+                    <h3>General Information (Buyer Data)</h3>
+                    <hr>
+                    <div class="form-group inputs">
+                        <label for="buyerName">Buyer Name (Purchasing Entity Name-MDA)</label>
+                        <input type="text" class="form-control" id="buyerName">
+                    </div>
+                    <div class="form-group inputs">
+                        <label for="buyerOrganizationIdentifier">Buyer organization identifier</label>
+                        <input type="text" class="form-control" id="buyerOrganizationIdentifier">
+                    </div>
+                    <div class="form-group inputs">
+                        <label for="buyerAddress">Buyer address</label>
+                        <input type="text" class="form-control" id="buyerAddress">
+                    </div>
+                    <div class="form-group inputs">
+                        <label for="BuyerContactPoint">Buyer contact Point</label>
+                        <input type="text" class="form-control" id="BuyerContactPoint">
+                    </div>
+                </div>
+                
+                <div class="tenderReleaseInfo">
+                    <h3 class="mt-5">Tender Release Information</h3>
+                    <hr>
+                    <div class="form-group inputs">
+                        <label for="ocid">OCID</label>
+                        <input type="text" class="form-control" id="ocid">
+                    </div>
+                    <div class="form-group inputs">
+                        <label for="tenderTag">Tender Tag</label>
+                        <select class="form-control" id="tenderTag">
+                            <option value="Tender">Tender</option>
+                            <option value="Tender Update">Tender Update</option>
+                            <option value="Tender Ammendment">Tender Amendment</option>
+                            <option value="Compiled">Compiled</option>
+                        </select>
+                    </div>
+                    <div class="form-group inputs">
+                        <label for="tenderto">Tender to update/amend</label>
+                        <input type="text" class="form-control" id="tenderto">
+                    </div>
+                    <div class="form-group inputs">
+                        <label for="tenderTitle">Tender title</label>
+                        <input type="text" class="form-control" id="tenderTitle">
+                    </div>
+                    <div class="form-group inputs">
+                        <label for="tenderDescription">Tender description</label>
+                        <textarea class="form-control" rows="5" id="tenderDescription"></textarea>
+                    </div>
+                    <div class="form-group inputs">
+                        <label for="tenderTo">Tender status</label>
+                        <select class="form-control" id="tenderTo">
+                            <option value="Planning">Planning</option>
+                            <option value="Planning Update">Planning Update</option>
+                            <option value="Tender">Tender</option>
+                            <option value="Tender Amendment">Tender Amendment</option>
+                            <option value="Tender Update">Tender Update</option>
+                            <option value="Tender Cancellation">Tender Cancellation</option>
+                            <option value="Award">Award</option>
+                            <option value="Award Update">Award Update</option>
+                            <option value="Award Cancellation">Award Cancellation</option>
+                            <option value="Contract">Contract</option>
+                            <option value="Contract Update">Contract Update</option>
+                            <option value="Contract Amendment">Contract Amendment</option>
+                            <option value="Implementation">Implementation</option>
+                            <option value="Implementation Update">Implementation Update</option>
+                            <option value="Contract Termination">Contract Termination</option>
+                            <option value="Compiled">Compiled</option>
+                        </select>
+                    </div>
+                    <div class="form-group inputs">
+                        <label for="rcNumber">Procuring entity Organization Identifier</label>
+                        <input type="text" class="form-control" id="rcNumber">
+                    </div>
+                    <div class="form-group inputs">
+                        <label for="procEntityName">Procuring Entity name</label>
+                        <input type="text" class="form-control" id="procEntityName">
+                    </div>
+                    <div class="form-group inputs">
+                        <label for="procEntityAddress">Procuring entity address</label>
+                        <input type="text" class="form-control" id="procEntityAddress">
+                    </div>
+                    <div class="form-group inputs">
+                        <label for="procEntityContactPoint">Procuring entity contact point</label>
+                        <input type="text" class="form-control" id="procEntityContactPoint">
+                    </div>
+                    
+                </div>
+
+                <div class="ListOfItems">
+                    <h3 class="mt-5">List of Items to be procured</h3>
+                    <hr>
+                    <div class="form-group inputs">
+                        <label for="totalNoOfItems">Total number of itemstotalNoOfItems (to be procured)</label>
+                        <input type="text" class="form-control" id="">
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 rightItem">
+                            <div class="form-group inputs">
+                                <input type="text" class="form-control" id="item1"
+                                    placeholder="Item 1">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group inputs float-right">
+                                <input type="text" class="form-control" id="Item1Class" placeholder="Item 1 Classification">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 rightItem">
+                            <div class="form-group inputs">
+                                <input type="text" class="form-control" id="Item2"
+                                    placeholder="Item 2">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group inputs float-right">
+                                <input type="text" class="form-control" id="Item2Class" placeholder="Item 2 Classification">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 rightItem">
+                                <button class="plusContainer">+</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group inputs">
+                        <label for="estimatedTenderValue">Estimated tender value</label>
+                        <input type="text" class="form-control" id="estimatedTenderValue">
+                    </div>
+                    <div class="form-group inputs">
+                        <label for="procMethod">Procurement method</label>
+                        <input type="text" class="form-control" id="procMethod">
+                    </div>
+                    <div class="form-group inputs">
+                        <label for="procurementMethodRationale">Procurement method rationale</label>
+                        <input type="text" class="form-control" id="procurementMethodRationale">
+                    </div>
+                    <div class="form-group inputs">
+                        <label for="procurementCategory">Procurement category</label>
+                        <input type="text" class="form-control" id="procurementCategory">
+                    </div>
+                    <div class="form-group inputs">
+                        <label for="awardCriteria">Award criteria</label>
+                        <select class="form-control" id="awardCriteria">
+                            <option value="Price Only">Price Only</option>
+                            <option value="Cost Only">Cost Only</option>
+                            <option value="Quality Only">Quality Only</option>
+                            <option value="Rated Criteria">Rated Criteria</option>
+                            <option value="Lowest Cost">Lowest Cost</option>
+                        </select>
+                    </div>
+                    <div class="form-group inputs">
+                        <label for="ubmissionMethod">Bid Submission Method</label>
+                        <select class="form-control" id="submissionMethod">
+                            <option value="Electronic Submission">Electronic Submission</option>
+                            <option value="Electronic Auction">Electronic Auction</option>
+                            <option value="Written">Written</option>
+                            <option value="In Person">In Person</option>
+                        </select>
+                    </div>
+                    <div class="form-group inputs">
+                        <label for="tenderPeriod">Tender Period</label>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 rightItem">
+                            <div class="form-group inputs">
+                                <label for="tenderStartDate">Start Date:</label>
+                                <input type="text" class="form-control" id="tenderStartDate" >
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group inputs float-right">
+                                <label for="tenderEndDate">End Date:</label>
+                                <input type="text" class="form-control" id="tenderEndDate">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group inputs">
+                        <label for="enquiryPeriod">Enquiry period</label>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 rightItem">
+                            <div class="form-group inputs">
+                                <label for="enquiryStartDate">Start Date:</label>
+                                <input type="text" class="form-control" id="enquiryStartDate" >
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group inputs float-right">
+                                <label for="enquiryEndDate">End Date:</label>
+                                <input type="text" class="form-control" id="enquiryEndDate">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group inputs">
+                        <label for="eligibilityCriteria">Eligibility criteria</label>
+                        <textarea class="form-control" rows="5" id="eligibilityCriteria"></textarea>
+                    </div>
+
+                    <!-- button section -->
+                    <div class="mt-4">
+                        <div class="mt-3">
+                            <button type="submit" class="btn btn-warning btn-block text-white">Save</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bidSubmission">
+                    <div>
+                        <h3 class="mt-5">This Section to be provided after Bid submission deadline</h3>
+                        <hr>
+                        <div class="form-group inputs">
+                            <label>Were Enquiries received?</label>
+                            <div>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="optradio">Yes
+                                    </label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="optradio">No
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group inputs">
+                        <label for="evaluationPeriod">Evaluation period</label>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 rightItem">
+                            <div class="form-group inputs">
+                                <label for="evaluationStartDate">Start Date:</label>
+                                <input type="text" class="form-control" id="evaluationStartDate">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group inputs float-right">
+                                <label for="evaluationEndDate">End Date:</label>
+                                <input type="text" class="form-control" id="evaluationEndDate">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group inputs">
+                        <label for="awardPeriod">Award period</label>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 rightItem">
+                            <div class="form-group inputs">
+                                <label for="awardStartDate">Start Date:</label>
+                                <input type="text" class="form-control" id="awardStartDate">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group inputs float-right">
+                                <label for="awardEndDate">End Date:</label>
+                                <input type="text" class="form-control" id="awardEndDate">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group inputs">
+                        <label for="estimatedContractPeriod">Estimated contract period</label>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 rightItem">
+                            <div class="form-group inputs">
+                                <label for="estimatedContractSD">Start Date:</label>
+                                <input type="text" class="form-control" id="estimatedContractSD">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group inputs float-right">
+                                <label for="estimatedContractED">End Date:</label>
+                                <input type="text" class="form-control" id="estimatedContractED">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group inputs">
+                        <label for="numberOfTenderers">Number of tenderers</label>
+                        <input type="text" class="form-control" id="numberOfTenderers">
+                    </div>
+
+                    <div class="form-group inputs">
+                        <label>List of tenderers</label>
+                        <input type="text" class="form-control" id="tenderer1" placeholder="tenderer1">
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <button class="plusContainer">+</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group inputs">
+                        <label>List of Key milestones</label>
+                        <input type="text" class="form-control" id="milestone1" placeholder="milestone1">
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <button class="plusContainer">+</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group inputs">
+                        <label>Amendments</label>
+                        <input type="text" class="form-control" id="amendment1" placeholder="amendment1">
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <button class="plusContainer">+</button>
+                        </div>
+                    </div>
+                </div>  
+
+                <!-- button section -->
+                <div class="mt-4">
+                    <div class="mt-3">
+                        <button type="submit" class="btn btn-warning btn-block text-white">Update</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <section id="footer">
+            <div class="container">
+                <div class="row text-center text-xs-center text-sm-left text-md-left">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <!-- <h5>Quick links</h5> -->
+                        <ul class="list-unstyled list-inline social">
+                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 text-center">
+                        <!-- <h5>Quick links</h5> -->
+                        <ul class="list-unstyled quick-links">
+                            <li>Visit Our Website At: <a href="www.bpp.ak.gov.ng"><u>www.bpp.ak.gov.ng</u></a></li>
+                            <li>Email: <a href="akocds@bpp.ak.gov.ng"><u>akocds@bpp.ak.gov.ng</a></u></li>
+                            <li><i class="fas fa-map-marker-alt"></i> XYZ Udo Umana Avenue <br> Uyo Akwa Ibom State</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <!-- <h5>Quick links</h5> -->
+                        <ul class="list-unstyled quick-links text-right">
+                            <li><u><a href="#">Home</a></u></li>
+                            <li><u><a href="#">Projects</a></u></li>
+                            <li><u><a href="#">Releases</a></u></li>
+                            <li><u><a href="#">Records</a></u></li>
+                            <li><u><a href="#">Packages</a></u></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                        <p class="h6">© 2020 Akwa Ibom State Bureau Of Public Procurement</p>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</html>

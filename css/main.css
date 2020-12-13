@@ -825,6 +825,63 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
   }
+  body #system-planning {
+    background-color: #ccffcc;
+  }
+  body #system-planning .container {
+    background-image: none !important;
+  }
+  body #system-planning .container h3 {
+    text-align: center;
+  }
+  body #system-planning .container .generalInfo {
+    background-image: url(../img/bg-small.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  body #system-planning .container .procurementPlanninginfo {
+    background-image: url(../img/bg-small.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  body #system-planning .container .budgetReserved {
+    background-image: url(../img/bg-small.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  body #systemTender .container {
+    background-image: none !important;
+  }
+  body #systemTender .container h3 {
+    text-align: center;
+  }
+  body #systemTender .container .generalInfo {
+    background-image: url(../img/bg-small.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  body #systemTender .container .tenderReleaseInfo {
+    background-image: url(../img/bg-small.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  body #systemTender .container .ListOfItems {
+    background-image: url(../img/bg-small.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  body #systemTender .container .bidSubmission {
+    background-image: url(../img/bg-small.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  body #systemTender .container .row .inputs {
+    width: 100%;
+  }
+  body #systemTender .container .rightItem {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 @media (max-width: 576px) {
@@ -1096,6 +1153,48 @@ body #system-planning .container {
   background-repeat: no-repeat;
   background-size: 800px;
   background-position: center;
+}
+
+body #systemTender {
+  background-color: #ccffcc;
+}
+
+body #systemTender .container {
+  background-image: url(../img/bg.png);
+  background-repeat: space;
+  background-size: 800px;
+  background-position: center;
+}
+
+body #systemTender .row .inputs {
+  width: 80%;
+}
+
+body #systemTender .rightItem {
+  -webkit-transform: translateX(20%);
+          transform: translateX(20%);
+}
+
+body #systemTender .plusContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid lightgrey;
+  margin-bottom: .7rem;
+  cursor: pointer;
+  border-radius: 3px;
+  width: 2.3rem;
+  height: 2.3rem;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: .5rem;
+  background-color: white;
 }
 
 section {
