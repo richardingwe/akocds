@@ -68,7 +68,7 @@
 
     <div id="systemTender">
         <div class="container py-5">
-            <form action="javascript:void(0)" method="">
+            <form action="/" method="">
                 <!-- General Information (Buyer Data) section -->
                 <div class="generalInfo">
                     <h3>General Information (Buyer Data)</h3>
@@ -164,37 +164,26 @@
                     <hr>
                     <div class="form-group inputs">
                         <label for="totalNoOfItems">Total number of items (to be procured)</label>
-                        <input type="number" class="form-control" id="">
+                        <input type="number" min="0" class="form-control totalNoOfItems" id="totalNoOfItems" value="1">
                     </div>
-                    <div class="row">
-                        <div class="col-sm-6 rightItem">
-                            <div class="form-group inputs">
-                                <input type="text" class="form-control" id="item1"
-                                    placeholder="Item 1">
+                    <div class="items">
+                        <div class="row">
+                            <div class="col-sm-6 rightItem">
+                                <div class="form-group inputs">
+                                    <input type="text" class="form-control" id="item1" placeholder="Item 1">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group inputs float-right">
-                                <input type="text" class="form-control" id="Item1Class" placeholder="Item 1 Classification">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6 rightItem">
-                            <div class="form-group inputs">
-                                <input type="text" class="form-control" id="Item2"
-                                    placeholder="Item 2">
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group inputs float-right">
-                                <input type="text" class="form-control" id="Item2Class" placeholder="Item 2 Classification">
+                            <div class="col-sm-6">
+                                <div class="form-group inputs float-right">
+                                    <input type="text" class="form-control" id="item1Class" placeholder="Item 1 Classification">
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-6 rightItem">
+                        <div class="col-sm-6 rightItem button">
                                 <button class="plusContainer">+</button>
+                                <button class="minusContainer" disabled>-</button>
                         </div>
                     </div>
 
@@ -427,33 +416,42 @@
                         <input type="number" class="form-control" id="numberOfTenderers">
                     </div>
 
-                    <div class="form-group inputs">
-                        <label>List of tenderers</label>
-                        <input type="text" class="form-control" id="tenderer1" placeholder="tenderer1">
+                    <label>List of tenderers</label>
+                    <div class="tenderer">
+                        <div class="form-group inputs">
+                            <input type="text" class="form-control" id="tenderer1" placeholder="tenderer1">
+                        </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-6">
-                            <button class="plusContainer">+</button>
+                        <div class="col-sm-6 button">
+                            <button class="plusContainer" id="ten">+</button>
+                            <button class="minusContainer" id="ten2" disabled>-</button>
                         </div>
                     </div>
 
-                    <div class="form-group inputs">
-                        <label>List of Key milestones</label>
-                        <input type="text" class="form-control" id="milestone1" placeholder="milestone1">
+                    <label>List of Key milestones</label>
+                    <div class="milestones">
+                        <div class="form-group inputs">
+                            <input type="text" class="form-control" id="milestone1" placeholder="milestone1">
+                        </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-6">
-                            <button class="plusContainer">+</button>
+                        <div class="col-sm-6 button">
+                            <button class="plusContainer" id="mile">+</button>
+                            <button class="minusContainer" id="mile2" disabled>-</button>
                         </div>
                     </div>
 
-                    <div class="form-group inputs">
-                        <label>Amendments</label>
-                        <input type="text" class="form-control" id="amendment1" placeholder="amendment1">
+                    <label>Amendments</label>
+                    <div class="amend">
+                        <div class="form-group inputs">
+                            <input type="text" class="form-control" id="amendment1" placeholder="amendment1">
+                        </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-6">
-                            <button class="plusContainer">+</button>
+                        <div class="col-sm-6 button">
+                            <button class="plusContainer" id="amend">+</button>
+                            <button class="minusContainer" id="amend2" disabled>-</button>
                         </div>
                     </div>
                 </div>  

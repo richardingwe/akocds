@@ -10,10 +10,113 @@ $(document).ready(function () {
 		]
 	});
 });
+
+const tenderInput1 = document.querySelector(".totalNoOfItems");
+const itemsDiv = document.querySelector(".items");
+const itemsButton = document.querySelector(".plusContainer");
+const itemsButton2 = document.querySelector(".minusContainer");
+const tendererDiv = document.querySelector(".tenderer");
+const tendererButton = document.querySelector("#ten");
+const tendererButton2 = document.querySelector("#ten2");
+const mileDiv = document.querySelector(".milestones");
+const mileButton = document.querySelector("#mile");
+const mileButton2 = document.querySelector("#mile2");
+const amendDiv = document.querySelector(".amend");
+const amendButton = document.querySelector("#amend");
+const amendButton2 = document.querySelector("#amend2");
+
+
+function createItem() {
+	if (tenderInput1.value <= 1) {
+		itemsButton2.setAttribute("disabled", " ");
+	} else {
+		itemsButton2.removeAttribute("disabled");
+	}
+	itemsDiv.innerHTML = "";
+	for (let i = 0; i < tenderInput1.value; i++) {
+		itemsDiv.innerHTML += `<div class="row">
+							<div class="col-sm-6 rightItem">
+								<div class="form-group inputs">
+									<input type="text" class="form-control" id="item${i + 1}"
+										placeholder="Item ${i + 1}">
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="form-group inputs float-right">
+									<input type="text" class="form-control" id="item${i + 1}Class" placeholder="Item ${i + 1} Classification">
+								</div>
+							</div>
+						</div>`;
+	}
+}
+
+let tendererCount = 1;
+let mileCount = 1;
+let amendCount = 1;
+
+function createInput(count, button, div, id) {
+	if (count <= 1) {
+		button.setAttribute("disabled", " ");
+	} else {
+		button.removeAttribute("disabled");
+	}
+	div.innerHTML = "";
+	for (let i = 0; i < count; i++) {
+		div.innerHTML += `<div class="form-group inputs"><input type="text" class="form-control" id="${id}${i + 1}" placeholder="${id}${i + 1}"></div>`;
+	}
+}
+
+itemsButton.addEventListener("click", (e) => {
+	e.preventDefault();
+	tenderInput1.value++;
+	createItem();
+});
+tendererButton.addEventListener("click", (e) => {
+	e.preventDefault();
+	tendererCount++;
+	createInput(tendererCount, tendererButton2, tendererDiv, "tenderer");
+});
+tendererButton2.addEventListener("click", (e) => {
+	e.preventDefault();
+	tendererCount--;
+	createInput(tendererCount, tendererButton2, tendererDiv, "tenderer");
+});
+mileButton.addEventListener("click", (e) => {
+	e.preventDefault();
+	mileCount++;
+	createInput(mileCount, mileButton2, mileDiv, "milestone");
+});
+mileButton2.addEventListener("click", (e) => {
+	e.preventDefault();
+	mileCount--;
+	createInput(mileCount, mileButton2, mileDiv, "milestone");
+});
+amendButton.addEventListener("click", (e) => {
+	e.preventDefault();
+	amendCount++;
+	createInput(amendCount, amendButton2, amendDiv, "amendment");
+});
+amendButton2.addEventListener("click", (e) => {
+	e.preventDefault();
+	amendCount--;
+	createInput(amendCount, amendButton2, amendDiv, "amendment");
+});
+itemsButton2.addEventListener("click", (e) => {
+	e.preventDefault();
+	tenderInput1.value--;
+	createItem();
+})
+
+tenderInput1.addEventListener("change", function () {
+	createItem();
+});
+
 const selectState = document.querySelector("#state");
 const selectLga = document.querySelector("#lga");
 const selectCountry = document.querySelector("#country");
 selectCountry.length = 0;
+
+
 
 
 
@@ -40,6 +143,9 @@ const data = async () => {
   }
 
 data();
+
+
+
 // Get rid of small loading animation
 [...document.querySelectorAll(".input-location-dependant")].forEach(element =>
 	element.classList.toggle("d-none")

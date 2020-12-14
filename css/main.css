@@ -1241,7 +1241,14 @@ body #systemTender .rightItem {
           transform: translateX(20%);
 }
 
-body #systemTender .plusContainer {
+body #systemTender .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #systemTender .plusContainer,
+body #systemTender .minusContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1252,6 +1259,7 @@ body #systemTender .plusContainer {
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid lightgrey;
+  outline: none;
   margin-bottom: .7rem;
   cursor: pointer;
   border-radius: 3px;

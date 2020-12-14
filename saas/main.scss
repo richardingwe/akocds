@@ -1250,11 +1250,17 @@ body #systemTender {
 	.rightItem {
 		transform: translateX(20%);
 	}
-	.plusContainer {
+
+	.button {
+		display: flex;
+	}
+	.plusContainer,
+	.minusContainer {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		border: 1px solid lightgrey;
+		outline: none;
 		margin-bottom: .7rem;
 		cursor: pointer;
 		border-radius: 3px;
@@ -1264,9 +1270,6 @@ body #systemTender {
 		font-weight: 700;
 		padding: .5rem;
 		background-color: white;
-
-		.plus {
-		}
 	}
 	// .plus {
 	// 	width: 10%;
