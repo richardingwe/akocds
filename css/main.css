@@ -1291,7 +1291,14 @@ body #systemAward .rightItem {
           transform: translateX(20%);
 }
 
-body #systemAward .plusContainer {
+body #systemAward .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #systemAward .plusContainer,
+body #systemAward .minusContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1302,6 +1309,7 @@ body #systemAward .plusContainer {
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid lightgrey;
+  outline: none;
   margin-bottom: .7rem;
   cursor: pointer;
   border-radius: 3px;
@@ -1333,7 +1341,14 @@ body #systemContract .rightItem {
           transform: translateX(20%);
 }
 
-body #systemContract .plusContainer {
+body #systemContract .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #systemContract .plusContainer,
+body #systemContract .minusContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1344,6 +1359,7 @@ body #systemContract .plusContainer {
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid lightgrey;
+  outline: none;
   margin-bottom: .7rem;
   cursor: pointer;
   border-radius: 3px;

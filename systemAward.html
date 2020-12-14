@@ -101,6 +101,7 @@
                     <div class="form-group inputs">
                         <label for="awardTag">Award tag</label>
                         <select class="form-control" id="awardTag">
+                            <option value="--Select One--">--Select One--</option>
                             <option value="Award">Award</option>
                             <option value="Award Update">Award Update</option>
                             <option value="Award Cancellation">Award Cancellation</option>
@@ -145,41 +146,27 @@
                 </div>
 
                 <div class="ListOfItems">
-                    <h3 class="mt-5">List of Items Awarded</h3>
-                    <hr>
                     <div class="form-group inputs">
-                        <label for="totalNoOfItems">Total number of items (to be procured)</label>
-                        <input type="number" class="form-control" id="tenderItemsTotal">
+                        <label>List of Items Awarded</label>
                     </div>
-                    <div class="row">
-                        <div class="col-sm-6 rightItem">
-                            <div class="form-group inputs">
-                                <input type="text" class="form-control" id="item1" placeholder="Item 1">
+                    <div class="items">
+                        <div class="row">
+                            <div class="col-sm-6 rightItem">
+                                <div class="form-group inputs">
+                                    <input type="text" class="form-control" id="item1" placeholder="Item 1">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group inputs float-right">
-                                <input type="text" class="form-control" id="Item1Class"
-                                    placeholder="Item 1 Classification">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6 rightItem">
-                            <div class="form-group inputs">
-                                <input type="text" class="form-control" id="Item2" placeholder="Item 2">
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group inputs float-right">
-                                <input type="text" class="form-control" id="Item2Class"
-                                    placeholder="Item 2 Classification">
+                            <div class="col-sm-6">
+                                <div class="form-group inputs float-right">
+                                    <input type="text" class="form-control" id="item1Class" placeholder="Item 1 Classification">
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-6 rightItem">
+                        <div class="col-sm-6 rightItem button">
                             <button class="plusContainer">+</button>
+                            <button class="minusContainer" disabled>-</button>
                         </div>
                     </div>
                     <div class="form-group inputs">
@@ -206,6 +193,7 @@
                     <div class="form-group inputs">
                         <label for="documentType">Document type</label>
                         <select class="form-control" id="documentType">
+                            <option value="--Select One--">--Select One--</option>
                             <option value="awardNotice">awardNotice</option>
                             <option value="contractDraft">contractDraft</option>
                             <option value="contractArrangements">contractArrangements</option>
@@ -220,6 +208,7 @@
                     <div class="form-group inputs">
                         <label for="documentTitle">Document title</label>
                         <select class="form-control" id="documentTitle">
+                            <option value="--Select One--">--Select One--</option>
                             <option value="Award notice">Award notice</option>
                             <option value="Contract draft">Contract draft</option>
                             <option value="Arrangements for ending contract">Arrangements for ending contract</option>
@@ -239,6 +228,7 @@
                     <div class="form-group inputs">
                         <label for="documentFormat">Document format</label>
                         <select class="form-control" id="documentFormat">
+                            <option value="--Select One--">--Select One--</option>
                             <option value="text/html">text/html</option>
                             <option value="application/doc/docx">application/doc/docx</option>
                             <option value="application/pdf">application/pdf</option>

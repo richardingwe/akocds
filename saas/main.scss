@@ -1271,13 +1271,9 @@ body #systemTender {
 		padding: .5rem;
 		background-color: white;
 	}
-	// .plus {
-	// 	width: 10%;
-	// }
 }
 body #systemAward {
 	background-color: $lighter-green;
-	// background-image: linear-gradient($orang-color, $light-green);
 	.container {
 		background-image: url(../img/bg.png);
 		background-repeat: space;
@@ -1292,11 +1288,17 @@ body #systemAward {
 	.rightItem {
 		transform: translateX(20%);
 	}
-	.plusContainer {
+
+	.button {
+		display: flex;
+	}
+	.plusContainer,
+	.minusContainer {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		border: 1px solid lightgrey;
+		outline: none;
 		margin-bottom: .7rem;
 		cursor: pointer;
 		border-radius: 3px;
@@ -1306,17 +1308,10 @@ body #systemAward {
 		font-weight: 700;
 		padding: .5rem;
 		background-color: white;
-
-		.plus {
-		}
 	}
-	// .plus {
-	// 	width: 10%;
-	// }
 }
 body #systemContract {
 	background-color: $lighter-green;
-	// background-image: linear-gradient($orang-color, $light-green);
 	.container {
 		background-image: url(../img/bg.png);
 		background-repeat: space;
@@ -1331,11 +1326,17 @@ body #systemContract {
 	.rightItem {
 		transform: translateX(20%);
 	}
-	.plusContainer {
+
+	.button {
+		display: flex;
+	}
+	.plusContainer,
+	.minusContainer {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		border: 1px solid lightgrey;
+		outline: none;
 		margin-bottom: .7rem;
 		cursor: pointer;
 		border-radius: 3px;
@@ -1345,13 +1346,7 @@ body #systemContract {
 		font-weight: 700;
 		padding: .5rem;
 		background-color: white;
-
-		.plus {
-		}
 	}
-	// .plus {
-	// 	width: 10%;
-	// }
 }
 
 // footer section

@@ -99,8 +99,9 @@
                         <input type="text" class="form-control" id="ocid">
                     </div>
                     <div class="form-group inputs">
-                        <label for="tenderTag">Tender Tag</label>
+                        <label for="tenderTag">Tender tag</label>
                         <select class="form-control" id="tenderTag">
+                            <option value="--Select One--">--Select One--</option>
                             <option value="Tender">Tender</option>
                             <option value="Tender Update">Tender Update</option>
                             <option value="Tender Ammendment">Tender Amendment</option>
@@ -122,6 +123,7 @@
                     <div class="form-group inputs">
                         <label for="tenderTo">Tender status</label>
                         <select class="form-control" id="tenderTo">
+                            <option value="--Select One--">--Select One--</option>
                             <option value="Planning">Planning</option>
                             <option value="Planning Update">Planning Update</option>
                             <option value="Tender">Tender</option>
@@ -160,11 +162,8 @@
                 </div>
 
                 <div class="ListOfItems">
-                    <h3 class="mt-5">List of Items to be procured</h3>
-                    <hr>
                     <div class="form-group inputs">
-                        <label for="totalNoOfItems">Total number of items (to be procured)</label>
-                        <input type="number" min="0" class="form-control totalNoOfItems" id="totalNoOfItems" value="1">
+                        <label>List of Items to be procured</label>
                     </div>
                     <div class="items">
                         <div class="row">
@@ -193,7 +192,13 @@
                     </div>
                     <div class="form-group inputs">
                         <label for="procMethod">Procurement method</label>
-                        <input type="text" class="form-control" id="procMethod">
+                        <select class="form-control" id="procMethod">
+                            <option value="--Select One--">--Select One--</option>
+                            <option value="Open">Open</option>
+                            <option value="Selective">Selective</option>
+                            <option value="Limited">Limited</option>
+                            <option value="Direct">Direct</option>
+                        </select>
                     </div>
                     <div class="form-group inputs">
                         <label for="procurementMethodRationale">Procurement method rationale</label>
@@ -201,11 +206,18 @@
                     </div>
                     <div class="form-group inputs">
                         <label for="procurementCategory">Procurement category</label>
-                        <input type="text" class="form-control" id="procurementCategory">
+                        <select class="form-control" id="procurementCategory">
+                            <option value="--Select One--">--Select One--</option>
+                            <option value="Goods">Goods</option>
+                            <option value="Works">Works</option>
+                            <option value="Services">Services</option>
+                            <option value="Consulting Services">Consulting Services</option>
+                        </select>
                     </div>
                     <div class="form-group inputs">
                         <label for="awardCriteria">Award criteria</label>
                         <select class="form-control" id="awardCriteria">
+                            <option value="--Select One--">--Select One--</option>
                             <option value="Price Only">Price Only</option>
                             <option value="Cost Only">Cost Only</option>
                             <option value="Quality Only">Quality Only</option>
@@ -216,6 +228,7 @@
                     <div class="form-group inputs">
                         <label for="ubmissionMethod">Bid Submission Method</label>
                         <select class="form-control" id="submissionMethod">
+                            <option value="--Select One--">--Select One--</option>
                             <option value="Electronic Submission">Electronic Submission</option>
                             <option value="Electronic Auction">Electronic Auction</option>
                             <option value="Written">Written</option>
@@ -268,6 +281,7 @@
                     <div class="form-group inputs">
                         <label for="documentType">Document type</label>
                         <select class="form-control" id="documentType">
+                            <option value="--Select One--">--Select One--</option>
                             <option value="tenderNotice">tenderNotice</option>
                             <option value="biddingDocuments">biddingDocuments</option>
                             <option value="technicalSpecifications">technicalSpecifications</option>
@@ -293,6 +307,7 @@
                     <div class="form-group inputs">
                         <label for="documentTitle">Document title</label>
                         <select class="form-control" id="documentTitle">
+                            <option value="--Select One--">--Select One--</option>
                             <option value="Tender notice">Tender notice</option>
                             <option value="Bidding documents">Bidding documents</option>
                             <option value="Technical specifications">Technical specifications</option>
@@ -322,6 +337,7 @@
                     <div class="form-group inputs">
                         <label for="documentFormat">Document format</label>
                         <select class="form-control" id="documentFormat">
+                            <option value="--Select One--">--Select One--</option>
                             <option value="text/html">text/html</option>
                             <option value="application/doc/docx">application/doc/docx</option>
                             <option value="application/pdf">application/pdf</option>
@@ -409,11 +425,6 @@
                                 <input type="date" class="form-control" id="estimatedContractED">
                             </div>
                         </div>
-                    </div>
-                    
-                    <div class="form-group inputs">
-                        <label for="numberOfTenderers">Number of tenderers</label>
-                        <input type="number" class="form-control" id="numberOfTenderers">
                     </div>
 
                     <label>List of tenderers</label>
